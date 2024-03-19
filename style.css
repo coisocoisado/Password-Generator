@@ -18,5 +18,24 @@
     height: 600px;
     border-radius: 20px;
     background: #E2E2E2;
+    display: flex;
+    justify-content: center;
 }
 
+#title {
+    width: 756px;
+    height: 80px;
+    background: #19747E;
+    border-radius: 35px;
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#title h3 {
+    font-weight: 500;
+    font-size: 40px;
+    align-self: center;
+    color: #08383E;
+}
