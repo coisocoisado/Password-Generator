@@ -157,3 +157,52 @@
 #refresh:active {
     background: rgba(0, 0, 0, 0.08);
 }
+
+#refresh.rotate {
+    animation: rotate-check .8s;
+}
+
+#check-boxes-div {
+    display: flex;
+    gap: 155px;
+    margin-top: 73px;
+}
+
+.check-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.check-container span {
+    color: #08383E;
+}
+
+.check-container input {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background: #E5E5E5;
+    border: 2px solid #D9D9D9;
+    border-radius: 5px;
+}
+
+.check-container input:checked {
+    /* inverted colors so the check icon is white */
+    background: #19747E url(checkmark-outline.svg);
+    mix-blend-mode: difference;
+    background-color: #e68b81;
+    border: #262626;
+}
+
+@keyframes rotate-check {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
