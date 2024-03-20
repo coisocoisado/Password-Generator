@@ -24,21 +24,21 @@
                 <input type="range" min="1" max="64" value="16" id="slider">
             </div>
             <div id="buttons-div">
-                <button class="btn">Copy</button>
-                <button id="refresh"><ion-icon name="refresh-outline" id="refresh-outline"></ion-icon></button>
-                <button class="btn">Delete</button>
+                <button class="btn" onclick="CopyToClipboard()">Copy</button>
+                <button id="refresh" onclick="GeneratePassword()"><ion-icon name="refresh-outline" id="refresh-outline"></ion-icon></button>
+                <button class="btn" onclick="output.value = ''">Delete</button>
             </div>
             <div id="check-boxes-div">
                 <div class="check-container">
-                    <input type="checkbox">
+                    <input type="checkbox" id="letter-switch" checked>
                     <span>ABC</span>
                 </div>
                 <div class="check-container">
-                    <input type="checkbox">
+                    <input type="checkbox" id="number-switch" checked>
                     <span>123</span>
                 </div>
                 <div class="check-container">
-                    <input type="checkbox">
+                    <input type="checkbox" id="special-switch" checked>
                     <span>!@#</span>
                 </div>    
             </div>
